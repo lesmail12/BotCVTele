@@ -1,0 +1,13 @@
+{
+    "build": {
+      "builder": "nixpacks",
+      "buildCommand": "pip install -r requirements.txt"
+    },
+    "deploy": {
+      "startCommand": "python bot.py",
+      "ports": {
+        "type": "web",
+        "value": 8000
+      }
+    }
+  }
